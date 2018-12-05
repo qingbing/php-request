@@ -36,7 +36,7 @@ class CliRequest extends Request
     public function init()
     {
         if (!preg_match("/cli/i", php_sapi_name())) {
-            throw new Exception("该程序是cli模式，只能在命令行模式下用脚步执行", 100900101);
+            throw new Exception("该程序是cli模式，只能在命令行模式下用脚步执行", 100600101);
         }
 
         // 计算命令绝对路径

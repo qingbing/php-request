@@ -27,7 +27,7 @@ class HttpRequest extends Request
     public function init()
     {
         if (preg_match("/cli/i", php_sapi_name())) {
-            throw new Exception("该程序是 http 模式，只能在 http 模式下用客户端访问", 100900201);
+            throw new Exception("该程序是 http 模式，只能在 http 模式下用客户端访问", 100600201);
         }
         // 请求 normalize
         $this->normalizeRequest();
@@ -242,7 +242,7 @@ class HttpRequest extends Request
             } else if (isset($_SERVER['DOCUMENT_ROOT']) && strpos($_SERVER['SCRIPT_FILENAME'], $_SERVER['DOCUMENT_ROOT']) === 0) {
                 $this->_scriptUrl = str_replace('\\', '/', str_replace($_SERVER['DOCUMENT_ROOT'], '', $_SERVER['SCRIPT_FILENAME']));
             } else {
-                throw new Exception("HttpRequest 无法解析 ScriptUrl", 100900202);
+                throw new Exception("HttpRequest 无法解析 ScriptUrl", 100600202);
             }
         }
         return $this->_scriptUrl;
@@ -273,7 +273,7 @@ class HttpRequest extends Request
                     $this->_requestUri .= '?' . $_SERVER['QUERY_STRING'];
                 }
             } else {
-                throw new Exception("HttpRequest 无法解析 RequestUri", 100900203);
+                throw new Exception("HttpRequest 无法解析 RequestUri", 100600203);
             }
         }
         return $this->_requestUri;
@@ -315,7 +315,7 @@ class HttpRequest extends Request
             } else if (0 === strpos($_SERVER['PHP_SELF'], $scriptUrl)) {
                 $pathInfo = substr($_SERVER['PHP_SELF'], strlen($scriptUrl));
             } else {
-                throw new Exception("HttpRequest 无法解析 PathInfo", 100900204);
+                throw new Exception("HttpRequest 无法解析 PathInfo", 100600204);
             }
             $this->_pathInfo = trim($pathInfo, '/');
         }
