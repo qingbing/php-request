@@ -1,0 +1,37 @@
+{
+    "name": "qingbing/php-request",
+    "description": "请求的相关方法，包含有CliRequest和HttpRequest",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "php",
+        "request"
+    ],
+    "homepage": "http://www.phpcorner.net",
+    "authors": [
+        {
+            "name": "qingbing",
+            "email": "780042175@qq.com"
+        }
+    ],
+    "require": {
+        "qingbing/php-helper": ">=1.0, <2.0",
+        "qingbing/php-config": ">=1.0, <2.0",
+        "qingbing/php-component": ">=1.0, <2.0"
+    },
+    "autoload": {
+        "classmap": [
+            "src/Request.php"
+        ],
+        "psr-4": {
+            "Request\\": "src/lib"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "TestClass\\": "test/classes",
+            "TestCore\\": "test/core",
+            "Test\\": "test/src"
+        }
+    }
+}
