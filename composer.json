@@ -24,6 +24,7 @@
             "src/Request.php"
         ],
         "psr-4": {
+            "Abstracts\\": "src/abstracts",
             "Request\\": "src/lib"
         }
     },

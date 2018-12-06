@@ -1,15 +1,14 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: charles
- * Date: 2018/10/31
- * Time: 上午10:51
+ * Link         :   http://www.phpcorner.net
+ * User         :   qingbing<780042175@qq.com>
+ * Date         :   2018-12-06
+ * Version      :   1.0
  */
-
 namespace Request;
 
+use Abstracts\Request;
 use Helper\Exception;
-use Request\Core\Request;
 
 /**
  * Class CliRequest

@@ -1,16 +1,16 @@
 <?php
+/**
+ * Link         :   http://www.phpcorner.net
+ * User         :   qingbing<780042175@qq.com>
+ * Date         :   2018-12-06
+ * Version      :   1.0
+ */
 
 use Request\CliRequest;
 use Request\HttpRequest;
 
 defined('DS') or define('DS', DIRECTORY_SEPARATOR);
 
-/**
- * Created by PhpStorm.
- * User: charles
- * Date: 2018/10/31
- * Time: 上午10:51
- */
 class Request
 {
     private static $_httpRequest;

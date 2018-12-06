@@ -116,6 +116,7 @@ var_dump($request->getUrl());
 异常代码格式：1006 - XXX - XX （组件编号 - 文件编号 - 代码内异常）
 ```
  - 100600101 : 该程序是cli模式，只能在命令行模式下用脚步执行
+ 
  - 100600201 : 该程序是 http 模式，只能在 http 模式下用客户端访问
  - 100600202 : HttpRequest 无法解析 ScriptUrl
  - 100600203 : HttpRequest 无法解析 RequestUri
