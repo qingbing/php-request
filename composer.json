@@ -20,12 +20,9 @@
         "qingbing/php-abstracts-component": ">=1.0, <2.0"
     },
     "autoload": {
-        "classmap": [
-            "src/Request.php"
-        ],
         "psr-4": {
             "Abstracts\\": "src/abstracts",
-            "Request\\": "src/lib"
+            "Components\\": "src/components"
         }
     },
     "autoload-dev": {

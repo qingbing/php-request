@@ -8,7 +8,7 @@
 
 namespace Test;
 
-use Request;
+use Components\Request;
 use TestCore\Tester;
 
 class TestCliRequest extends Tester
