@@ -24,7 +24,7 @@ abstract class Request extends Component
      * 获取请求传递参数值
      * @param string $name
      * @param mixed $defaultValue
-     * @return array the GET or POST parameter
+     * @return mixed the GET or POST parameter
      */
     public function getParam($name, $defaultValue = null)
     {
