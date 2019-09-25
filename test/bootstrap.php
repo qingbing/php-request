@@ -15,13 +15,13 @@ defined("CONFIG_PATH") or define("CONFIG_PATH", dirname(realpath(".")) . "/conf"
 defined("RUNTIME_PATH") or define("RUNTIME_PATH", dirname(realpath(".")) . "/runtime");
 
 try {
-    if ($_GET['c']) {
+    if ($_GET['c'] || !empty($_GET['c'])) {
         $className = $_GET['c'];
         $class = "\Test\\{$className}";
     } else {
-        $class = "\TestCore\\Helper";
+        $class = "\DBootstrap\TestHelper";
     }
-    /* @var $class \TestCore\Tester */
+    /* @var $class \DBootstrap\Abstracts\Tester */
     $class::getInstance()->run();
 } catch (Exception $e) {
     var_dump($e);

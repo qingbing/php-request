@@ -19,6 +19,9 @@
         "qingbing/php-config": ">=1.0, <2.0",
         "qingbing/php-abstracts-component": ">=1.0, <2.0"
     },
+    "require-dev": {
+        "qingbing/php-debug-bootstrap": "dev-master"
+    },
     "autoload": {
         "psr-4": {
             "Abstracts\\": "src/abstracts",
@@ -28,7 +31,6 @@
     "autoload-dev": {
         "psr-4": {
             "TestClass\\": "test/classes",
-            "TestCore\\": "test/core",
             "Test\\": "test/src"
         }
     }

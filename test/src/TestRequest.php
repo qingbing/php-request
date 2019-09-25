@@ -9,7 +9,7 @@
 namespace Test;
 
 use Components\Request;
-use TestCore\Tester;
+use DBootstrap\Abstracts\Tester;
 
 class TestRequest extends Tester
 {
